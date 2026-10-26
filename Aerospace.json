@@ -1,0 +1,103 @@
+{
+  "reportType": "SKYSHIELD simulated incident report",
+  "exportedAt": "2026-10-26T06:08:09.410Z",
+  "disclaimer": "SIMULATED DATA ONLY. This report contains fictional demonstration data and is not an operational or real-world incident record.",
+  "simulation": {
+    "elapsedSeconds": 34,
+    "scenario": "unusual-speed",
+    "running": true,
+    "rules": {
+      "speedThresholdKts": 500,
+      "staleAfterSeconds": 5
+    }
+  },
+  "objects": [
+    {
+      "id": "SKY-042",
+      "type": "UAV",
+      "callsign": "NIGHTJAR",
+      "altitudeFt": 12400,
+      "speedKts": 184,
+      "headingDegrees": 70.70995378081126,
+      "status": "TRACKING",
+      "position": {
+        "x": 89.49925120000003,
+        "y": 24.025262080008986
+      },
+      "telemetryUpdatedAtSimulatedSeconds": 34
+    },
+    {
+      "id": "SKY-017",
+      "type": "AIRCRAFT",
+      "callsign": "MERIDIAN 7",
+      "altitudeFt": 28100,
+      "speedKts": 412,
+      "headingDegrees": 222.13759477388828,
+      "status": "MONITORING",
+      "position": {
+        "x": 15.462855680000473,
+        "y": 76.96210687999826
+      },
+      "telemetryUpdatedAtSimulatedSeconds": 34
+    },
+    {
+      "id": "SKY-089",
+      "type": "UAV",
+      "callsign": "ORBITER",
+      "altitudeFt": 8700,
+      "speedKts": 680,
+      "headingDegrees": -61.26020470831199,
+      "status": "FLAGGED",
+      "position": {
+        "x": 50.913080319999835,
+        "y": 56.88781823999281
+      },
+      "telemetryUpdatedAtSimulatedSeconds": 34
+    },
+    {
+      "id": "SKY-031",
+      "type": "HELICOPTER",
+      "callsign": "KITE 31",
+      "altitudeFt": 4200,
+      "speedKts": 112,
+      "headingDegrees": 139.12759170251172,
+      "status": "TRACKING",
+      "position": {
+        "x": 60.03082879999922,
+        "y": 42.52451327999999
+      },
+      "telemetryUpdatedAtSimulatedSeconds": 34
+    },
+    {
+      "id": "SKY-064",
+      "type": "AIRCRAFT",
+      "callsign": "PACIFIC 12",
+      "altitudeFt": 31600,
+      "speedKts": 438,
+      "headingDegrees": 223.02506598911805,
+      "status": "MONITORING",
+      "position": {
+        "x": 73.02526207999291,
+        "y": 53.687219200000435
+      },
+      "telemetryUpdatedAtSimulatedSeconds": 34
+    }
+  ],
+  "alertEventHistory": [
+    {
+      "id": "sim-alert-1",
+      "objectId": "SKY-089",
+      "ruleId": "speed-threshold",
+      "title": "Simulated speed threshold exceeded",
+      "severity": "MEDIUM",
+      "explanation": "Rule: speed must stay at or below 500 kts. SKY-089 is at 680 kts, so this is MEDIUM severity.",
+      "eventTimestamp": {
+        "simulatedSeconds": 26,
+        "simulatedClock": "14:42:26 UTC"
+      },
+      "active": true,
+      "acknowledgementStatus": "unacknowledged"
+    }
+  ],
+  "emptyReport": false
+}
